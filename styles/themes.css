@@ -4,3 +4,83 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /*
+    --accent-color: #ff0070;
+    --background-color: #000028;
+    --font-title-decorated-color: #db00ff;
+    --hover-outline-color: #ff007066;
+    --h2-font-color: var(--accent-color);
+    --font-main-color: var(--background-color);
+    --content-text-color: #f1b2ce;
+    --border-accent-color: var(--accent-color);
+    --header-theme-menu-content-color: var(--accent-color);
+    --background-image: url("../images/cover-image-dark.png");
+    */
+  }
+
+  .page.theme_dark {
+  }
+
+  .hidden__light-theme {
+    opacity: 1;
+  }
+}
+
+:root.theme-dark {
+  /*
+  --accent-color: #ff0070;
+  --background-color: #000028;
+  --font-title-decorated-color: #db00ff;
+  --hover-outline-color: #ff007066;
+  --h2-font-color: var(--accent-color);
+  --font-main-color: var(--background-color);
+  --content-text-color: #f1b2ce;
+  --border-accent-color: var(--accent-color);
+  --header-theme-menu-content-color: var(--accent-color);
+  --background-image: url("../images/cover-image-dark.png");
+  */
+}
+
+.page.theme_dark {
+}
+
+.theme-dark .hidden__light-theme {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /*
+    --accent-color: #ff8dcb;
+    --background-color: #fff1f7;
+    --font-title-decorated-color: #ffc2e6;
+    --hover-outline-color: #32312d66;
+    --h2-font-color: var(--font-main-color);
+    --font-main-color: #353430;
+    --content-text-color: var(--font-main-color);
+    --border-accent-color: var(--font-main-color);
+    --header-theme-menu-content-color: var(--font-main-color);
+    --background-image: url("../images/cover-image-light.png");
+    */
+  }
+
+  .page.theme_light {
+  }
+
+  .hidden__light-theme {
+    opacity: 0;
+  }
+}
+
+:root.theme-light {
+}
+
+.page.theme_light {
+}
+
+.theme-light .hidden__light-theme {
+  opacity: 0;
+}
