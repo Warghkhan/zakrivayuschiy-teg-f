@@ -2,11 +2,6 @@
 :root {
   --main-font: "Inter", sans-serif;
   --accent-font: "PressStart2P", sans-serif;
-  /*background colors*/
-  --background-pixel-content-color: #d3d3d3;
-  --background-empty-pixel-color: #00000000;
-  --background-top-gradient-color: #e7e7e7;
-  --background-bottom-gradient-color: #1a1a1a;
   --background-image: repeating-linear-gradient(
       to left,
       var(--background-pixel-content-color) 0 2px,
@@ -22,4 +17,15 @@
       var(--background-top-gradient-color),
       var(--background-bottom-gradient-color)
     );
+  /*background colors*/
+  --background-pixel-content-color: #d3d3d3;
+  --background-empty-pixel-color: #00000000;
+  --background-top-gradient-color: #e7e7e7;
+  --background-bottom-gradient-color: #1a1a1a;
+  /*font colors*/
+  --main-font-color: #000000;
+  /*
+  --accent-font-color: 
+  */
+  --background-fill-color: #ffffff;
 }
