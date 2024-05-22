@@ -145,7 +145,8 @@
 }
 
 .card__image {
-  width: 100%;
+  max-width: 100%;
+  min-height: 697px;
 }
 
 .card__text__content {
@@ -161,24 +162,17 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-block-start: 28px;
+  margin-block-start: 25px;
   margin-inline-end: 28px;
   margin-block-end: 25px;
 }
 
 .card__icon-button {
-  background-color: transparent;
-  outline-style: none;
-  border: none;
-
 }
 
 .card__like-button {
   border: 2px solid var(--main-font-color);
   padding: 8px 33px;
-  background-color: transparent;
-  outline-style: none;
-  /*border: none;*/
 }
 
 .button__text {
@@ -192,13 +186,35 @@
   align-items: center;
   justify-content: center;
   margin-block-start: 50px;
-  margin-block-end: 50px;
+  margin-block-end: 103px;
 }
 
 .footer__button {
-background-color: var(--background-fill-color);;
-  outline-style: none;
+  background-color: var(--background-fill-color);
+  padding: 18.5px 20px;
+  border: 2px solid var(--main-font-color);
 }
+
+.dialog__content {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  border-width: 1px;
+  transition: opacity 0.3s ease-in-out;
+  max-inline-size: 550px;
+  inline-size: 80%;
+  min-inline-size: 250px;
+}
+
+.dialog__content:not([open]) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dialog__content::backdrop {
+  background-color: #00000091;
+}
+
 
 
 .filter__sepia__light {
@@ -206,11 +222,11 @@ background-color: var(--background-fill-color);;
 }
 
 .filter__contrast__light {
-  filter: contrast(50%);
+  filter: contrast(-50%);
 }
 
 .filter__saturate__light {
-  filter: saturate(50%);
+  filter: saturate(-50%);
 }
 
 @media (width <= 375px) {
