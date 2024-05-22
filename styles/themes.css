@@ -14,6 +14,8 @@
     --background-fill-color: var(--background-pixel-content-color);
     --main-content-font-weight: 465;
     --card-header-font-weight: 785;
+    --mix-blend-inside-color: var(--main-font-color);
+    --mix-blend-outside-color: var(--background-fill-color);
   }
 
   .hidden__light-theme {
@@ -29,6 +31,8 @@
   --background-fill-color: var(--background-pixel-content-color);
   --main-content-font-weight: 465;
   --card-header-font-weight: 785;
+  --mix-blend-inside-color: var(--main-font-color);
+  --mix-blend-outside-color: var(--background-fill-color);
 }
 
 .theme-dark .hidden__light-theme {
@@ -44,6 +48,8 @@
     --background-fill-color: #ffffff;
     --main-content-font-weight: 400;
     --card-header-font-weight: 700;
+    --mix-blend-inside-color: var(--main-font-color);
+    --mix-blend-outside-color: var(--background-fill-color);
   }
 
   .hidden__light-theme {
@@ -59,6 +65,8 @@
   --background-fill-color: #ffffff;
   --main-content-font-weight: 400;
   --card-header-font-weight: 700;
+  --mix-blend-inside-color: var(--main-font-color);
+  --mix-blend-outside-color: var(--background-fill-color);
 }
 
 .theme-light .hidden__light-theme {
