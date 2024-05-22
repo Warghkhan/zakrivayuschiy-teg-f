@@ -221,7 +221,7 @@
 }
 
 .filter__contrast__light {
-  filter: contrast(50%);
+  filter: contrast(50%) sepia(70%);
 }
 
 .filter__saturate__light {
