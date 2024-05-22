@@ -1,280 +1,327 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="color-scheme" content="dark light" />
-  <link rel="icon" href="./images/favicons/favicon-svgomg-optimized.svg" type="image/svg+xml" />
-  <link type="image/png" sizes="16x16" rel="icon" href="./images/favicons/favicon-16x16.png" />
-  <link type="image/png" sizes="32x32" rel="icon" href="./images/favicons/favicon-32x32.png" />
-  <link rel="apple-touch-icon" href="./images/favicons/apple-touch-icon.png" />
-  <link type="image/png" sizes="192x192" rel="icon" href="./images/favicons/android-chrome-192x192.png" />
-  <link type="image/png" sizes="512x512" rel="icon" href="./images/favicons/android-chrome-512x512.png" />
-  <!--
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="color-scheme" content="dark light" />
+    <link
+      rel="icon"
+      href="./images/favicons/favicon-svgomg-optimized.svg"
+      type="image/svg+xml"
+    />
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="./images/favicons/favicon-16x16.png"
+    />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="./images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./images/favicons/apple-touch-icon.png"
+    />
+    <link
+      type="image/png"
+      sizes="192x192"
+      rel="icon"
+      href="./images/favicons/android-chrome-192x192.png"
+    />
+    <link
+      type="image/png"
+      sizes="512x512"
+      rel="icon"
+      href="./images/favicons/android-chrome-512x512.png"
+    />
+    <!--
     <link rel="icon" href="./images/favicons/favicon.ico" />
     -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Закрывающий тег</title>
-  <link rel="stylesheet" href="./fonts/fonts.css" />
-  <link rel="stylesheet" href="./styles/variables.css" />
-  <link rel="stylesheet" href="./styles/globals.css" />
-  <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="stylesheet" href="./styles/animations.css" />
-  <link rel="stylesheet" href="./styles/themes.css" />
-  <script src="./scripts/set-theme.js"></script>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Закрывающий тег</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./styles/themes.css" />
+    <script src="./scripts/set-theme.js"></script>
+  </head>
 
-<body class="page">
-  <header class="header">
-    <h1 class="header__title">&lt;/HTML&gt;</h1>
-    <p class="header__subtitle">закрывающий тег</p>
-    <nav class="theme-menu header__theme-menu">
-      <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
-      <ul class="theme-menu__list">
-        <li class="theme-menu__item">
-          <button type="button" data-theme="dark" class="theme-menu__button">
-            Темно
-          </button>
+  <body class="page">
+    <header class="header">
+      <h1 class="header__title">&lt;/HTML&gt;</h1>
+      <p class="header__subtitle">закрывающий тег</p>
+      <nav class="theme-menu header__theme-menu">
+        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
+        <ul class="theme-menu__list">
+          <li class="theme-menu__item">
+            <button type="button" data-theme="dark" class="theme-menu__button">
+              Темно
+            </button>
+          </li>
+          <li class="theme-menu__item">
+            <button
+              type="button"
+              data-theme="auto"
+              disabled
+              class="theme-menu__button"
+            >
+              Авто
+            </button>
+          </li>
+          <li class="theme-menu__item">
+            <button type="button" data-theme="light" class="theme-menu__button">
+              Светло
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main__content">
+      <ul class="cards__list">
+        <li class="cards__list__item">
+          <h2 class="card__header">
+            Фритрек и нулевой спринт: Подготовка к работе
+          </h2>
+          <div class="wrapper__label__n__image">
+            <span class="label__on__image"> &lt;/HTML&gt; </span>
+            <img
+              class="card__image filter__sepia__light"
+              src="./images/first-card-image.gif"
+              alt="Анимированное изображение девушки, путешествующей по горной дороге"
+            />
+          </div>
+
+          <p class="card__text__content">
+            Это было самое начало пути. На этом этапе важно было проникнуться
+            основами и настроиться на учёбу. И, возможно, подумать, как новые
+            знания могут повлиять на ваше будущее.
+          </p>
+          <p class="card__text__content">
+            Воспоминание №0: Ничего не понятно, но очень интересно.
+          </p>
+          <div class="card__like__bottom">
+            <button class="card__icon-button"></button>
+            <button class="card__like-button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
         </li>
-        <li class="theme-menu__item">
-          <button type="button" data-theme="auto" disabled class="theme-menu__button">
-            Авто
-          </button>
+        <li class="cards__list__item">
+          <h2 class="card__header">1 спринт: Я — чистый лист</h2>
+          <div class="wrapper__label__n__image">
+            <span class="label__on__image"> &lt;/HTML&gt; </span>
+            <img
+              class="card__image filter__contrast__light"
+              src="./images/second-card-image.gif"
+              alt="Мультипликационное анимированное изображение румяного смайлика"
+            />
+          </div>
+
+          <p class="card__text__content">
+            На первых этапах мы работали со страхами и сомнениями, которые часто
+            испытывают новички. Один из них — страх перед чистым листом. Это,
+            конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим
+            ощущением скрываются более глубокие вопросы: с чего начать? <br />а
+            вдруг будет слишком сложно? что, если я не справлюсь?
+          </p>
+          <p class="card__text__content">Воспоминание №1:</p>
+          <div class="card__like__bottom">
+            <button class="card__icon-button"></button>
+            <button class="card__like-button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
         </li>
-        <li class="theme-menu__item">
-          <button type="button" data-theme="light" class="theme-menu__button">
-            Светло
-          </button>
+        <li class="cards__list__item">
+          <h2 class="card__header">1 спринт: А если не получится?</h2>
+          <div class="wrapper__label__n__image">
+            <span class="label__on__image"> &lt;/CSS&gt; </span>
+            <img
+              class="card__image filter__saturate__light"
+              src="./images/third-card-image.gif"
+              alt="Мультипликационное анимированное изображение человека, несколько гротескно празднующего триумф"
+            />
+          </div>
+
+          <p class="card__text__content">
+            Первый проект — позади! Но это всё ещё самое начало пути. Радость
+            могла быстро померкнуть и смениться ожиданием провала. Или вы,
+            наоборот, могли вдохновиться успехами и поверить в себя.
+          </p>
+          <p class="card__text__content">Воспоминание №2:</p>
+          <div class="card__like__bottom">
+            <button class="card__icon-button"></button>
+            <button class="card__like-button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </li>
+        <li class="cards__list__item">
+          <h2 class="card__header">2 спринт: Погоня за идеалом</h2>
+          <div class="wrapper__label__n__image">
+            <span class="label__on__image"> &lt;desigions&gt; </span>
+            <img
+              class="card__image filter__blur__light"
+              src="./images/fourth-card-image.gif"
+              alt="Мультипликационное анимированное изображение едущего автомобиля с мужчиной и его собакой"
+            />
+          </div>
+
+          <p class="card__text__content">
+            На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы
+            понять, как много ещё впереди. Вы могли попытаться погнаться за
+            идеалом и понять, что он недостижим. А, может, вы вовсе и не
+            подвержены перфекционизму и вместо того, чтобы сделать идеально,
+            старались просто сделать.
+          </p>
+          <p class="card__text__content">Воспоминание №3:</p>
+          <div class="card__like__bottom">
+            <button class="card__icon-button"></button>
+            <button class="card__like-button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </li>
+        <li class="cards__list__item">
+          <h2 class="card__header">2 спринт: О тех, кто рядом</h2>
+          <div class="wrapper__label__n__image">
+            <span class="label__on__image"> care </span>
+            <img
+              class="card__image filter__hue-rotate__light"
+              src="./images/fifth-card-image.gif"
+              alt="Кадры из т/с 'Power Rangers' с одновременно взлетающими героями"
+            />
+          </div>
+
+          <p class="card__text__content">
+            Всё это время вы были не одиноки (хотя, возможно, иногда и
+            чувствовали, что одни против целого мира). Вас окружали
+            одногруппники, команда сопровождения и просто близкие люди, которым
+            можно пожаловаться, если очередной макет просто так не поддавался.
+            Осваивать что-то новое легче, когда рядом есть единомышленники, не
+            правда ли?
+          </p>
+          <p class="card__text__content">Воспоминание №4:</p>
+          <div class="card__like__bottom">
+            <button class="card__icon-button"></button>
+            <button class="card__like-button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </li>
+        <li class="cards__list__item">
+          <h2 class="card__header">3 спринт: Обходные стратегии</h2>
+          <div class="wrapper__label__n__image">
+            <span class="label__on__image"> &lt;support&gt; </span>
+            <img
+              class="card__image filter__grayscale__light"
+              src="./images/sixth-card-image.gif"
+              alt="Кадры из м/с 'Губка Боб' с раздумывающими Бобом и Патриком"
+            />
+          </div>
+
+          <p class="card__text__content">
+            На этом курсе вы постоянно решали разные задачи. В какой-то момент
+            вам могло показаться, что решения просто иссякли. Значит, пришло
+            время посмотреть на задачу под другим углом.
+          </p>
+          <p class="card__text__content">Воспоминание №5:</p>
+          <div class="card__like__bottom">
+            <button class="card__icon-button"></button>
+            <button class="card__like-button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </li>
+        <li class="cards__list__item">
+          <h2 class="card__header">3 спринт: Когда опускаются руки</h2>
+          <div class="wrapper__label__n__image">
+            <span class="label__on__image"> &lt;lifes-style: none;&gt; </span>
+            <img
+              class="card__image filter__sepia__light filter__saturate__light"
+              src="./images/seventh-card-image.gif"
+              alt="Dj Khaled и надпись, призывающая сфокусироваться"
+            />
+          </div>
+
+          <p class="card__text__content">
+            Во время учёбы часто возникает чувство, когда не знаешь, за что
+            хвататься. Вроде и проектную пора сдавать, и задачи хочется
+            порешать, и в теории получше разобраться, и жизнь не забыть пожить.
+            В такие моменты очень нужна концентрация. Вспомните, откуда вы её
+            черпали.
+          </p>
+          <p class="card__text__content">Воспоминание №6:</p>
+          <div class="card__like__bottom">
+            <button class="card__icon-button"></button>
+            <button class="card__like-button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </li>
+        <li class="cards__list__item">
+          <h2 class="card__header">«Сейчас я здесь»</h2>
+          <div class="wrapper__label__n__image">
+            <span class="label__on__image"> &lt;experience&gt; </span>
+            <img
+              class="card__image filter__invert__light"
+              src="./images/eighth-card-image.jpg"
+              alt="Выкрашенная белым кирпичная стена с плакатом, на котором надпись 'Сейчас самое время'"
+            />
+          </div>
+
+          <p class="card__text__content">
+            Сейчас вы уже очень много знаете о вёрстке. Но это только начало.<br />
+            Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с
+            окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И
+            этот мир постоянно меняется. Познать его полностью не получится, но
+            это тот случай, когда важен сам процесс познания. Ведь часто путь —
+            и есть результат.
+          </p>
+          <p class="card__text__content">
+            Текущие мысли №0:<br />Текущие мысли №0.5:
+          </p>
+          <div class="card__like__bottom">
+            <button class="card__icon-button"></button>
+            <button class="card__like-button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
         </li>
       </ul>
-    </nav>
-  </header>
-  <main class="main__content">
-    <ul class="cards__list">
-      <li class="cards__list__item">
-        <h2 class="card__header">
-          Фритрек и нулевой спринт: Подготовка к работе
-        </h2>
-        <div class="wrapper__label__n__image">
-          <span class="label__on__image">
-            &lt;/HTML&gt;
-          </span>
-          <img class="card__image filter__sepia__light" src="./images/first-card-image.gif"
-            alt="Анимированное изображение девушки, путешествующей по горной дороге" />
-        </div>
-
-        <p class="card__text__content">
-          Это было самое начало пути. На этом этапе важно было проникнуться
-          основами и настроиться на учёбу. И, возможно, подумать, как новые
-          знания могут повлиять на ваше будущее.
-        </p>
-        <p class="card__text__content">
-          Воспоминание №0: Ничего не понятно, но очень интересно.
-        </p>
-        <div class="card__like__bottom">
-          <button class="card__icon-button"></button>
-          <button class="card__like-button">
-            <span class="button__text">Like</span>
+    </main>
+    <footer class="footer">
+      <button
+        class="footer__button"
+        type="button"
+        onclick="window['dialog-id'].showModal()"
+        aria-controls="dialog-id"
+      >
+        <svg viewBox="0 0 21 21" class="floppy__image">
+          <use href="svg/floppy-optimized.svg#floppy__image" />
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+      <dialog class="dialog__content" id="dialog-id">
+        <form method="dialog">
+          <img class="dialog__image" src="" alt="" />
+          <label> Вставьте дискету, чтобы продолжить </label>
+          <button
+            type="button"
+            onclick="window['dialog-id'].close()"
+            aria-controls="dialog-id"
+          >
+            <span class="footer__button__text">OK</span>
           </button>
-        </div>
-      </li>
-      <li class="cards__list__item">
-        <h2 class="card__header">1 спринт: Я — чистый лист</h2>
-        <div class="wrapper__label__n__image">
-          <span class="label__on__image">
-            &lt;/HTML&gt;
-          </span>
-          <img class="card__image filter__contrast__light" src="./images/second-card-image.gif"
-            alt="Мультипликационное анимированное изображение румяного смайлика" />
-        </div>
-
-        <p class="card__text__content">
-          На первых этапах мы работали со страхами и сомнениями, которые часто
-          испытывают новички. Один из них — страх перед чистым листом. Это,
-          конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим
-          ощущением скрываются более глубокие вопросы: с чего начать? <br />а
-          вдруг будет слишком сложно? что, если я не справлюсь?
-        </p>
-        <p class="card__text__content">Воспоминание №1:</p>
-        <div class="card__like__bottom">
-          <button class="card__icon-button"></button>
-          <button class="card__like-button">
-            <span class="button__text">Like</span>
-          </button>
-        </div>
-      </li>
-      <li class="cards__list__item">
-        <h2 class="card__header">1 спринт: А если не получится?</h2>
-        <div class="wrapper__label__n__image">
-          <span class="label__on__image">
-            &lt;/CSS&gt;
-          </span>
-          <img class="card__image filter__saturate__light" src="./images/third-card-image.gif"
-            alt="Мультипликационное анимированное изображение человека, несколько гротескно празднующего триумф" />
-        </div>
-
-        <p class="card__text__content">
-          Первый проект — позади! Но это всё ещё самое начало пути. Радость
-          могла быстро померкнуть и смениться ожиданием провала. Или вы,
-          наоборот, могли вдохновиться успехами и поверить в себя.
-        </p>
-        <p class="card__text__content">Воспоминание №2:</p>
-        <div class="card__like__bottom">
-          <button class="card__icon-button"></button>
-          <button class="card__like-button">
-            <span class="button__text">Like</span>
-          </button>
-        </div>
-      </li>
-      <li class="cards__list__item">
-        <h2 class="card__header">2 спринт: Погоня за идеалом</h2>
-        <div class="wrapper__label__n__image">
-          <span class="label__on__image">
-            &lt;desigions&gt;
-          </span>
-          <img class="card__image filter__blur__light" src="./images/fourth-card-image.gif"
-            alt="Мультипликационное анимированное изображение едущего автомобиля с мужчиной и его собакой" />
-        </div>
-
-        <p class="card__text__content">
-          На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы
-          понять, как много ещё впереди. Вы могли попытаться погнаться за
-          идеалом и понять, что он недостижим. А, может, вы вовсе и не
-          подвержены перфекционизму и вместо того, чтобы сделать идеально,
-          старались просто сделать.
-        </p>
-        <p class="card__text__content">Воспоминание №3:</p>
-        <div class="card__like__bottom">
-          <button class="card__icon-button"></button>
-          <button class="card__like-button">
-            <span class="button__text">Like</span>
-          </button>
-        </div>
-      </li>
-      <li class="cards__list__item">
-        <h2 class="card__header">2 спринт: О тех, кто рядом</h2>
-        <div class="wrapper__label__n__image">
-          <span class="label__on__image">
-            care
-          </span>
-          <img class="card__image filter__hue-rotate__light" src="./images/fifth-card-image.gif"
-            alt="Кадры из т/с 'Power Rangers' с одновременно взлетающими героями" />
-        </div>
-
-        <p class="card__text__content">
-          Всё это время вы были не одиноки (хотя, возможно, иногда и
-          чувствовали, что одни против целого мира). Вас окружали
-          одногруппники, команда сопровождения и просто близкие люди, которым
-          можно пожаловаться, если очередной макет просто так не поддавался.
-          Осваивать что-то новое легче, когда рядом есть единомышленники, не
-          правда ли?
-        </p>
-        <p class="card__text__content">Воспоминание №4:</p>
-        <div class="card__like__bottom">
-          <button class="card__icon-button"></button>
-          <button class="card__like-button">
-            <span class="button__text">Like</span>
-          </button>
-        </div>
-      </li>
-      <li class="cards__list__item">
-        <h2 class="card__header">3 спринт: Обходные стратегии</h2>
-        <div class="wrapper__label__n__image">
-          <span class="label__on__image">
-            &lt;support&gt;
-          </span>
-          <img class="card__image filter__grayscale__light" src="./images/sixth-card-image.gif"
-            alt="Кадры из м/с 'Губка Боб' с раздумывающими Бобом и Патриком" />
-        </div>
-
-        <p class="card__text__content">
-          На этом курсе вы постоянно решали разные задачи. В какой-то момент
-          вам могло показаться, что решения просто иссякли. Значит, пришло
-          время посмотреть на задачу под другим углом.
-        </p>
-        <p class="card__text__content">Воспоминание №5:</p>
-        <div class="card__like__bottom">
-          <button class="card__icon-button"></button>
-          <button class="card__like-button">
-            <span class="button__text">Like</span>
-          </button>
-        </div>
-      </li>
-      <li class="cards__list__item">
-        <h2 class="card__header">3 спринт: Когда опускаются руки</h2>
-        <div class="wrapper__label__n__image">
-          <span class="label__on__image">
-            &lt;lifes-style: none;&gt;
-          </span>
-          <img class="card__image filter__sepia__light filter__saturate__light" src="./images/seventh-card-image.gif"
-            alt="Dj Khaled и надпись, призывающая сфокусироваться" />
-        </div>
-
-        <p class="card__text__content">
-          Во время учёбы часто возникает чувство, когда не знаешь, за что
-          хвататься. Вроде и проектную пора сдавать, и задачи хочется
-          порешать, и в теории получше разобраться, и жизнь не забыть пожить.
-          В такие моменты очень нужна концентрация. Вспомните, откуда вы её
-          черпали.
-        </p>
-        <p class="card__text__content">Воспоминание №6:</p>
-        <div class="card__like__bottom">
-          <button class="card__icon-button"></button>
-          <button class="card__like-button">
-            <span class="button__text">Like</span>
-          </button>
-        </div>
-      </li>
-      <li class="cards__list__item">
-        <h2 class="card__header">«Сейчас я здесь»</h2>
-        <div class="wrapper__label__n__image">
-          <span class="label__on__image">
-            &lt;experience&gt;
-          </span>
-          <img class="card__image filter__invert__light" src="./images/eighth-card-image.jpg"
-            alt="Выкрашенная белым кирпичная стена с плакатом, на котором надпись 'Сейчас самое время'" />
-        </div>
-
-        <p class="card__text__content">
-          Сейчас вы уже очень много знаете о вёрстке. Но это только начало.<br />
-          Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с
-          окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И
-          этот мир постоянно меняется. Познать его полностью не получится, но
-          это тот случай, когда важен сам процесс познания. Ведь часто путь —
-          и есть результат.
-        </p>
-        <p class="card__text__content">
-          Текущие мысли №0:<br />Текущие мысли №0.5:
-        </p>
-        <div class="card__like__bottom">
-          <button class="card__icon-button"></button>
-          <button class="card__like-button">
-            <span class="button__text">Like</span>
-          </button>
-        </div>
-      </li>
-    </ul>
-  </main>
-  <footer class="footer">
-    <button class="footer__button" type="button" onclick="window['dialog-id'].showModal()" aria-controls="dialog-id">
-      <svg viewBox="0 0 21 21" class="floppy__image">
-        <use href="svg/floppy-optimized.svg#floppy__image">
-      </svg>
-      <span class="button__text">Сохранить на память</span>
-    </button>
-    <dialog class="dialog__content" id="dialog-id">
-      <form method="dialog">
-        <img class="dialog__image" src="" alt="" />
-        <label> Вставьте дискету, чтобы продолжить </label>
-        <button type="button" onclick="window['dialog-id'].close()" aria-controls="dialog-id">
-          <span class="footer__button__text">OK</span>
-        </button>
-      </form>
-    </dialog>
-  </footer>
-  <script src="./scripts/like.js"></script>
-</body>
-
+        </form>
+      </dialog>
+    </footer>
+    <script src="./scripts/like.js"></script>
+  </body>
 </html>
 <!--
 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
