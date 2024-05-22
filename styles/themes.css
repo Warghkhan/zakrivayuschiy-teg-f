@@ -12,6 +12,8 @@
     --background-bottom-gradient-color: #004306;
     --main-font-color: #00cc14;
     --background-fill-color: var(--background-pixel-content-color);
+    --main-content-font-weight: 465;
+    --card-header-font-weight: 785;
   }
 
   .hidden__light-theme {
@@ -25,6 +27,8 @@
   --background-bottom-gradient-color: #004306;
   --main-font-color: #00cc14;
   --background-fill-color: var(--background-pixel-content-color);
+  --main-content-font-weight: 465;
+  --card-header-font-weight: 785;
 }
 
 .theme-dark .hidden__light-theme {
@@ -38,6 +42,8 @@
     --background-bottom-gradient-color: #1a1a1a;
     --main-font-color: #000000;
     --background-fill-color: #ffffff;
+    --main-content-font-weight: 400;
+    --card-header-font-weight: 700;
   }
 
   .hidden__light-theme {
@@ -51,6 +57,8 @@
   --background-bottom-gradient-color: #1a1a1a;
   --main-font-color: #000000;
   --background-fill-color: #ffffff;
+  --main-content-font-weight: 400;
+  --card-header-font-weight: 700;
 }
 
 .theme-light .hidden__light-theme {

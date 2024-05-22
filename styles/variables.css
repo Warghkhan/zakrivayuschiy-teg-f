@@ -25,4 +25,7 @@
   /*font colors*/
   --main-font-color: #000000;
   --background-fill-color: #ffffff;
+  /*font weights*/
+  --main-content-font-weight: 400;
+  --card-header-font-weight: 700;
 }

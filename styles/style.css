@@ -20,6 +20,7 @@
   background-image: var(--background-image);
   background-size: cover;
   font-family: var(--main-font);
+  font-variation-settings: "wght" var(--main-content-font-weight);
   color: var(--main-font-color);
 }
 
@@ -135,7 +136,7 @@
 
 .card__header {
   font-style: normal;
-  font-weight: 700;
+  font-variation-settings: "wght" var(--card-header-font-weight);
   font-size: 18px;
   line-height: 22px;
   display: flex;
@@ -215,18 +216,31 @@
   background-color: #00000091;
 }
 
-
-
 .filter__sepia__light {
   filter: sepia(20%);
 }
 
 .filter__contrast__light {
-  filter: contrast(-50%);
+  filter: contrast(50%);
 }
 
 .filter__saturate__light {
-  filter: saturate(-50%);
+  filter: saturate(50%);
+}
+
+.filter__blur__light {
+  filter: blur(0.5px);
+}
+.filter__hue-rotate__light {
+  filter: hue-rotate(90deg);
+}
+
+.filter__grayscale__light {
+  filter: grayscale(30%);
+}
+
+.filter__invert__light {
+  filter: invert(3%);
 }
 
 @media (width <= 375px) {
