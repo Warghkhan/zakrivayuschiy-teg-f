@@ -48,7 +48,7 @@
     --background-fill-color: #ffffff;
     --main-content-font-weight: 400;
     --card-header-font-weight: 700;
-    --mix-blend-inside-color: var(--main-font-color);
+    --mix-blend-inside-color: var(--background-fill-color);
     --mix-blend-outside-color: var(--background-fill-color);
   }
 
@@ -65,7 +65,7 @@
   --background-fill-color: #ffffff;
   --main-content-font-weight: 400;
   --card-header-font-weight: 700;
-  --mix-blend-inside-color: var(--main-font-color);
+  --mix-blend-inside-color: var(--background-fill-color);
   --mix-blend-outside-color: var(--background-fill-color);
 }
 
