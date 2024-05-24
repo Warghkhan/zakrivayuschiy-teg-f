@@ -387,11 +387,16 @@
 .button__common:hover::after {
   transform: scaleX(1);
 }
-
+/*
 .dialog__content {
+
+}
+*/
+.dialog__content[open] {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   inset: 0;
-  display: flex;
   border-width: 1px;
   transition: opacity 0.3s ease-in-out;
   max-inline-size: 550px;

@@ -620,32 +620,23 @@
         <span class="button__text">Сохранить на память</span>
       </button>
     </footer>
+    <dialog
+      class="dialog__content"
+      aria-labelledby="dialog__name"
+      id="modal__window"
+    >
+    <form method="dialog"></form>
+      <svg viewBox="0 0 21 21" class="floppy__image">
+        <use href="svg/floppy-optimized.svg#floppy__image" />
+      </svg>
+      <span id="dialog__name"> Вставьте дискету, чтобы продолжить </span>
+      
+        <button class="button__common dialog__button" type="submit">
+          <span class="dialog__button__text">OK</span>
+        </button>
+      </form>
+    </dialog>
 
     <script src="./scripts/like.js"></script>
   </body>
 </html>
-<dialog
-  class="dialog__content"
-  aria-labelledby="dialog__name"
-  id="modal__window"
->
-  <svg viewBox="0 0 21 21" class="floppy__image">
-    <use href="svg/floppy-optimized.svg#floppy__image" />
-  </svg>
-  <span id="dialog__name"> Вставьте дискету, чтобы продолжить </span>
-  <!--    
-      <button class="button__common dialog__button" onclick="closeModal()">
-    -->
-  <form method="dialog">
-    <button class="button__common dialog__button" type="submit">
-      <span class="dialog__button__text">OK</span>
-    </button>
-  </form>
-</dialog>
-<!--
-<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
-  <symbol id="floppy__image" stroke="currentColor" fill="currentColor">
-    
-  </symbol>
-</svg>
--->
