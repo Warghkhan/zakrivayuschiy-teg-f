@@ -16,6 +16,7 @@
     --card-header-font-weight: 785;
     --mix-blend-inside-color: var(--main-font-color);
     --mix-blend-outside-color: var(--background-fill-color);
+
   }
 
   .hidden__light-theme {

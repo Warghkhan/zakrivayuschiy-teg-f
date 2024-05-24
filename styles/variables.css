@@ -28,4 +28,9 @@
   /*font weights*/
   --main-content-font-weight: 400;
   --card-header-font-weight: 700;
+  --heart-contour-color: var(--main-font-color);
+  --heart-main-body-color: red;
+  --heart-core-color-common: var(--heart-main-body-color);
+  --heart-core-color-hover: var(--heart-contour-color);
+  --heart-sparks-color: var(--heart-main-body-color);
 }
