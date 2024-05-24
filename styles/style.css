@@ -477,7 +477,6 @@
   }
 
   .dialog__content[open] {
-    opacity: 50%;
     padding: 29px 47px;
   }
 }
