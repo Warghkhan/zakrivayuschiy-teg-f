@@ -16,11 +16,10 @@
     --card-header-font-weight: 785;
     --mix-blend-inside-color: var(--main-font-color);
     --mix-blend-outside-color: var(--background-fill-color);
-
   }
 
-  .hidden__light-theme {
-    opacity: 1;
+  .theme-dark .card__text__content {
+    letter-spacing: 0;
   }
 }
 
@@ -35,9 +34,8 @@
   --mix-blend-inside-color: var(--main-font-color);
   --mix-blend-outside-color: var(--background-fill-color);
 }
-
-.theme-dark .hidden__light-theme {
-  opacity: 1;
+.theme-dark .card__text__content {
+  letter-spacing: 0;
 }
 
 @media (prefers-color-scheme: light) {
@@ -52,9 +50,8 @@
     --mix-blend-inside-color: var(--background-fill-color);
     --mix-blend-outside-color: var(--background-fill-color);
   }
-
-  .hidden__light-theme {
-    opacity: 0;
+  .theme-light .card__text__content {
+    letter-spacing: 0.1px;
   }
 }
 
@@ -70,6 +67,6 @@
   --mix-blend-outside-color: var(--background-fill-color);
 }
 
-.theme-light .hidden__light-theme {
-  opacity: 0;
+.theme-light .card__text__content {
+  letter-spacing: 0.1px;
 }
