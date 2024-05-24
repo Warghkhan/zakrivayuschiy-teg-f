@@ -621,9 +621,11 @@
       </button>
       <dialog class="dialog__content" id="dialog-id">
         <form method="dialog">
+          <svg viewBox="0 0 21 21" class="floppy__image">
+            <use href="svg/floppy-optimized.svg#floppy__image" />
+          </svg>
           <label> Вставьте дискету, чтобы продолжить </label>
-          <button>
-            <img class="dialog__image" src="" alt="" />
+          <button class="button__common" onclick="closeModal()">
             <span class="footer__button__text">OK</span>
           </button>
         </form>
