@@ -434,6 +434,7 @@
 .filter__invert__light {
   filter: invert(3%);
 }
-
+/*
 @media (width <= 375px) {
 }
+*/
