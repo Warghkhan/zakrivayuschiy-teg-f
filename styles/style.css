@@ -217,34 +217,32 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  gap: 2px;
+  align-items: center;
+  gap: 8px;
   margin-block-start: 27px;
   margin-block-end: 25px;
-  /*
-  margin-inline-start: 25px;
-  */
   margin-inline-end: 28px;
-
 }
-
-
 
 .card__icon-button {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
-
-  outline: 1px solid salmon;
-}
-
-.like-icon {
   block-size: 36px;
   inline-size: 39px;
+  border: 2px solid transparent;
+  /*
+  outline: 2px solid var(--main-font-color);*/
 }
 
 .card__icon-button:focus-visible {
+  border: 2px solid var(--main-font-color);
+  transition: border 0.3s ease;
+}
 
-
+.like-icon {
+  position: absolute;
 }
 
 .card__like-button {
