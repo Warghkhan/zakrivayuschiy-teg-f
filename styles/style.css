@@ -397,11 +397,42 @@
   flex-direction: column;
   position: fixed;
   inset: 0;
-  border-width: 1px;
+  outline: 2px solid var(--main-font-color);
+  max-inline-size: 355px;
   transition: opacity 0.3s ease-in-out;
-  max-inline-size: 550px;
-  inline-size: 80%;
-  min-inline-size: 250px;
+  padding: 30px;
+  gap: 30px;
+  /*
+  opacity: 50%;
+  */
+}
+
+.dialog__image__n__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+.dialog__text {
+  font-size: 15px;
+  line-height: 21px;
+  margin-block-start: 0;
+}
+
+.dialog__image {
+  flex-shrink: 0;
+  margin-block-start: 8px;
+  inline-size: 55px;
+  block-size: 55px;
+}
+
+.dialog__button {
+  background-color: var(--background-fill-color);
+  padding: 7.5px 20px;
+  border: 2px solid var(--main-font-color);
+  position: relative;
+  min-width: 100%;
 }
 
 .dialog__content:not([open]) {

@@ -620,23 +620,26 @@
         <span class="button__text">Сохранить на память</span>
       </button>
     </footer>
+
     <dialog
       class="dialog__content"
-      aria-labelledby="dialog__name"
       id="modal__window"
+      aria-labelledby="dialog__name"
     >
-    <form method="dialog"></form>
-      <svg viewBox="0 0 21 21" class="floppy__image">
-        <use href="svg/floppy-optimized.svg#floppy__image" />
-      </svg>
-      <span id="dialog__name"> Вставьте дискету, чтобы продолжить </span>
-      
-        <button class="button__common dialog__button" type="submit">
-          <span class="dialog__button__text">OK</span>
+      <div class="dialog__image__n__text">
+        <svg class="dialog__image" viewBox="0 0 30 30">
+          <use href="svg/floppy-optimized.svg#floppy__image" />
+        </svg>
+        <span class="dialog__text header__subtitle"
+          >Вставьте дискету,чтобы продолжить</span
+        >
+      </div>
+      <form method="dialog">
+        <button type="submit" class="button__common dialog__button">
+          <span class="button__text">ок</span>
         </button>
       </form>
     </dialog>
-
     <script src="./scripts/like.js"></script>
   </body>
 </html>
