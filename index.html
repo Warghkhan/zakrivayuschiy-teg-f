@@ -624,15 +624,19 @@
     <script src="./scripts/like.js"></script>
   </body>
 </html>
-<dialog class="dialog__content" id="modal__window">
-  <form method="dialog">
-    <svg viewBox="0 0 21 21" class="floppy__image">
-      <use href="svg/floppy-optimized.svg#floppy__image" />
-    </svg>
-    <span> Вставьте дискету, чтобы продолжить </span>
-    <!--    
+<dialog
+  class="dialog__content"
+  aria-labelledby="dialog__name"
+  id="modal__window"
+>
+  <svg viewBox="0 0 21 21" class="floppy__image">
+    <use href="svg/floppy-optimized.svg#floppy__image" />
+  </svg>
+  <span id="dialog__name"> Вставьте дискету, чтобы продолжить </span>
+  <!--    
       <button class="button__common dialog__button" onclick="closeModal()">
     -->
+  <form method="dialog">
     <button class="button__common dialog__button" type="submit">
       <span class="dialog__button__text">OK</span>
     </button>
