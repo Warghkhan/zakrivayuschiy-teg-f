@@ -17,6 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-color: var(--background-fill-color);
   background-image: var(--background-image);
   background-attachment: fixed;
   background-size: cover;
@@ -33,28 +34,27 @@
   justify-items: center;
   align-items: center;
   justify-content: center;
-  min-height: clamp(327px, 25.56vh, 368px);
   margin-block-start: 100px;
   margin-inline: auto;
   max-inline-size: clamp(375px, 50vw, 700px);
-  gap: 20px;
+  gap: 18px;
+}
+
+.header__logo {
+  font-family: var(--accent-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(49px, 5vw, 65px);
+  margin-block-start: clamp(120px, 13vw, 140px);
 }
 
 .header__title {
   font-family: var(--accent-font);
   font-style: normal;
   font-weight: 400;
-  font-size: clamp(49px, 5vw, 65px);
-  margin-block-start: clamp(120px, 15vh, 141px);
-}
-
-.header__subtitle {
-  font-family: var(--accent-font);
-  font-style: normal;
-  font-weight: 400;
   font-size: clamp(14px, 2.4vw, 23px);
   text-transform: uppercase;
-  margin-block-start: clamp (3px, 0.3vh, 5px);
+  margin-block-start: clamp(3px, 0.3vh, 5px);
 }
 
 .header__theme-menu {
@@ -81,6 +81,7 @@
   text-transform: uppercase;
   justify-self: center;
   align-self: center;
+  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:disabled {
@@ -107,7 +108,6 @@
   opacity: 60%;
 }
 .theme-menu__button:hover {
-  transition: opacity 0.3s ease;
   opacity: 60%;
 }
 
@@ -146,7 +146,8 @@
 }
 
 .main__content {
-  margin-block-start: 100px;
+  display: grid;
+  margin-block-start: 103px;
   margin-inline: auto;
   max-inline-size: clamp(375px, 50vw, 700px);
 }
@@ -187,6 +188,7 @@
   opacity: 50%;
   font-size: 14px;
   font-weight: 400;
+  text-shadow: none;
 }
 
 @supports (
@@ -222,9 +224,9 @@
   justify-content: flex-end;
   align-items: center;
   gap: 8px;
-  margin-block-start: 27px;
-  margin-block-end: 25px;
-  margin-inline-end: 28px;
+  margin-block-start: 30px;
+  margin-block-end: 23px;
+  margin-inline-end: 24px;
 }
 
 .card__icon-button {
@@ -236,98 +238,22 @@
   inline-size: 43px;
   padding: 0;
   border: 2px solid transparent;
+  transition: border 0.3s ease;
 }
 
 .card__icon-button:focus-visible {
   border: 2px solid var(--main-font-color);
-  transition: border 0.3s ease;
 }
 
 .like-icon {
   position: relative;
 }
 
-.like-icon.is-liked .heart {
-  transform-origin: center;
-  animation: heart-is-liked-scale 0.3s 0.1s ease-in backwards;
-}
-
-@keyframes heart-is-liked-scale {
-  from {
-    transform: scale(1);
-  }
-
-  95% {
-    transform: scale(1.5);
-  }
-
-  to {
-    transform: scale(1);
-  }
-}
-
-.like-icon:hover .core {
-  transition: fill 0.5s 0.1s ease;
-  fill: var(--heart-core-color-hover);
-}
-
-.like-icon:hover .main-body {
-  transition: fill 0.5s 0.2s ease;
-  fill: var(--heart-core-color-hover);
-}
-
-.like-icon:active .core,
-.like-icon:active .main-body {
-  transition: fill 0.5s ease;
-  fill: var(--heart-main-body-color);
-}
-
-.like-icon.is-liked .contour {
-  transition: fill 0.3s 0.06s ease;
-  fill: var(--heart-main-body-color);
-}
-.like-icon .contour {
-  transition: fill 0.1s linear;
-  fill: var(--heart-contour-color);
-}
-.like-icon.is-liked .core,
-.like-icon.is-liked .main-body {
-  fill: var(--heart-main-body-color);
-}
-
-.like-icon.is-liked .sparks {
-  animation: heart-is-liked-opacity 0.3s 0.3s ease-in;
-}
-
-@keyframes heart-is-liked-opacity {
-  from {
-    opacity: 0;
-  }
-
-  80% {
-    opacity: 0;
-  }
-  85% {
-    opacity: 0.3;
-  }
-
-  95% {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-.sparks {
-  opacity: 0;
-}
-
 .card__like-button {
   position: relative;
   border: 2px solid var(--main-font-color);
-  padding: 8px 33px;
+  padding: 8px 0;
+  min-inline-size: 130px;
 }
 
 .button__text {
@@ -340,15 +266,12 @@
   z-index: 1;
 }
 
-.footer {
-  display: grid;
-  align-items: center;
-  justify-content: center;
+.save__button {
+  /*display: grid;*/
+  align-self: center;
+  justify-self: center;
   margin-block-start: 52px;
   margin-block-end: 103px;
-}
-
-.footer__button {
   background-color: var(--background-fill-color);
   padding: 15.5px 20px;
   border: 2px solid var(--main-font-color);
@@ -467,6 +390,10 @@
 }
 
 @media (width <= 376px) {
+  .header {
+    gap: 21px;
+  }
+
   .footer__button {
     display: flex;
     flex-direction: column;

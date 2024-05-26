@@ -51,8 +51,8 @@
 
   <body class="page">
     <header class="header">
-      <h1 class="header__title">&lt;/HTML&gt;</h1>
-      <p class="header__subtitle">закрывающий тег</p>
+      <a href="#" class="header__logo">&lt;/HTML&gt;</a>
+      <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -103,7 +103,7 @@
             Воспоминание №0: Ничего не понятно, но очень интересно.
           </p>
           <div class="card__like__bottom">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
@@ -143,7 +143,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button__common">
+            <button type="button" class="card__like-button button__common">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -171,7 +171,7 @@
             вопрос: "А как?"
           </p>
           <div class="card__like__bottom">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
@@ -211,7 +211,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button__common">
+            <button type="button" class="card__like-button button__common">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -236,7 +236,7 @@
             Воспоминание №2: Полагаю, что это мне теперь по плечу!
           </p>
           <div class="card__like__bottom">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
@@ -276,7 +276,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button__common">
+            <button type="button" class="card__like-button button__common">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -304,7 +304,7 @@
             нужно еще узнать!
           </p>
           <div class="card__like__bottom">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
@@ -344,7 +344,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button__common">
+            <button type="button" class="card__like-button button__common">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -372,7 +372,7 @@
             Воспоминание №4: Всем огромное спасибо за помощь и поддержку!
           </p>
           <div class="card__like__bottom">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
@@ -412,7 +412,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button__common">
+            <button type="button" class="card__like-button button__common">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -437,7 +437,7 @@
             Воспоминание №5: Гуглим, читаем, пробуем, при неудаче - повторить.
           </p>
           <div class="card__like__bottom">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
@@ -477,7 +477,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -506,7 +506,7 @@
             больше.
           </p>
           <div class="card__like__bottom">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
@@ -546,7 +546,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button__common">
+            <button type="button" class="card__like-button button__common">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -577,7 +577,7 @@
             существует такая вещь, как океан и море.
           </p>
           <div class="card__like__bottom">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
@@ -617,27 +617,24 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button__common">
+            <button type="button" class="card__like-button button__common">
               <span class="button__text">Like</span>
             </button>
           </div>
         </li>
       </ul>
-    </main>
-    <footer class="footer">
       <button
-        class="footer__button button__common"
         type="button"
+        class="save__button button__common"
         onclick="window['modal__window'].showModal()"
         aria-controls="modal__window"
       >
         <svg viewBox="0 0 21 21" class="floppy__image">
           <use href="svg/floppy-optimized.svg#floppy__image" />
         </svg>
-        <span class="button__text">Сохранить на память</span>
+        <span class="button__text">Сохранить на&nbsp;память</span>
       </button>
-    </footer>
-
+    </main>
     <dialog
       class="dialog__content"
       id="modal__window"
@@ -647,9 +644,9 @@
         <svg class="dialog__image" viewBox="0 0 30 30">
           <use href="svg/floppy-optimized.svg#floppy__image" />
         </svg>
-        <span id="dialog__name" class="dialog__text header__subtitle"
-          >Вставьте дискету,чтобы продолжить</span
-        >
+        <p id="dialog__name" class="dialog__text header__title">
+          Вставьте дискету,чтобы продолжить
+        </p>
       </div>
       <form method="dialog">
         <button type="submit" class="button__common dialog__button">
