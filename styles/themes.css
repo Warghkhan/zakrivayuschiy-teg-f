@@ -18,9 +18,6 @@
     --mix-blend-outside-color: var(--background-fill-color);
   }
 
-  .theme-dark .card__text__content {
-    letter-spacing: 0;
-  }
 }
 
 :root.theme-dark {
@@ -34,9 +31,7 @@
   --mix-blend-inside-color: var(--main-font-color);
   --mix-blend-outside-color: var(--background-fill-color);
 }
-.theme-dark .card__text__content {
-  letter-spacing: 0;
-}
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -50,9 +45,7 @@
     --mix-blend-inside-color: var(--background-fill-color);
     --mix-blend-outside-color: var(--background-fill-color);
   }
-  .theme-light .card__text__content {
-    letter-spacing: 0.1px;
-  }
+
 }
 
 :root.theme-light {
@@ -67,6 +60,4 @@
   --mix-blend-outside-color: var(--background-fill-color);
 }
 
-.theme-light .card__text__content {
-  letter-spacing: 0.1px;
-}
+
