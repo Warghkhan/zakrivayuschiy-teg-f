@@ -1,6 +1,7 @@
 /* Здесь вы напишете основную часть стилей страницы.
 
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, 
+чтобы в HTML некоторые классы были названы особым образом:
 ✦ theme-dark — класс тёмной темы
 ✦ theme-light — класс светлой темы
 ✦ like-icon — для svg-иконки анимированного сердца
@@ -82,6 +83,7 @@
   text-transform: uppercase;
   background-color: transparent;
   transition: opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .theme-menu__button:disabled {
@@ -111,38 +113,11 @@
   opacity: 60%;
 }
 
-@keyframes chosing-outline {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
-  }
-}
-
-@keyframes change-color-choosen-theme {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 60%;
-  }
-}
-
 .theme-menu__button:disabled::after {
   content: "▶";
   position: absolute;
   animation: move-arrow-choosen-theme 0.8s ease-in-out infinite alternate;
   inset-inline-start: 6px;
-}
-
-@keyframes move-arrow-choosen-theme {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-10px);
-  }
 }
 
 .main__content {
@@ -258,7 +233,6 @@
   position: relative;
   border: 2px solid var(--main-font-color);
   padding: 8px 0;
-  cursor: pointer;
   min-inline-size: 130px;
 }
 
@@ -286,15 +260,10 @@
   background-color: var(--background-fill-color);
 }
 
-.floppy__image {
-  fill: var(--mix-blend-inside-color);
-  block-size: 20px;
-  inline-size: 20px;
-}
-
 .button__common {
   box-shadow: 2px 2px 0 0 transparent;
   transition: box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .button__common:focus {
@@ -325,33 +294,42 @@
   inset: 0;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  padding: 30px;
-  outline: 2px solid var(--main-font-color);
+  gap: 29px;
+  padding: 28px;
+  outline: 1px solid var(--main-font-color);
   color: var(--main-font-color);
   background-color: var(--background-fill-color);
   transition: opacity 0.3s ease-in-out;
   max-inline-size: clamp(346px, 36.97vw, 355px);
+  /*
+  opacity: 1%;
+  */
 }
 
 .dialog__image__n__text {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 2px;
+  gap: 18px;
 }
 
 .dialog__text {
   margin-block-start: 0;
   font-size: 14px;
   line-height: 21px;
+  text-transform: uppercase;
 }
 
 .dialog__image {
   flex-shrink: 0;
-  margin-block-start: 8px;
-  inline-size: 55px;
-  block-size: 55px;
+  inline-size: 41px;
+  block-size: 63px;
+}
+
+.floppy__image {
+  color: var(--main-font-color);
+  block-size: 21px;
+  inline-size: 21px;
 }
 
 .dialog__button {
@@ -360,6 +338,10 @@
   border: 2px solid var(--main-font-color);
   padding: 7.5px 20px;
   background-color: var(--background-fill-color);
+}
+
+.dialog__button .button__text {
+  text-transform: uppercase;
 }
 
 .dialog__content:not([open]) {
@@ -415,6 +397,11 @@
 
   .cards__list {
     gap: 52.8px;
+  }
+
+  .label__on__image {
+    top: 22px;
+    right: 11px;
   }
 
   .save__button {
